@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/post-it.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bold64">Daily Post-it</div>
+    </header>
+    <main>
+      <div class="button-container">
+        <div class="color-buttons">
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-yellow)"
+          />
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-red)"
+          />
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-orange)"
+          />
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-green)"
+          />
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-blue)"
+          />
+          <button
+            class="color-button"
+            style="background-color: var(--post-it-purple)"
+          />
+        </div>
+        <button class="write-button medium18">write</button>
+      </div>
+
+      <div class="post-container"></div>
+
+      <div class="write-modal-overlay hidden">
+        <form class="write-modal">
+          <div class="content-container">
+            <input class="title" type="text" required maxlength="10" />
+            <div class="color-select">
+              <select class="color">
+                <option value="var(--post-it-yellow)">노랑</option>
+                <option value="var(--post-it-red)">빨강</option>
+                <option value="var(--post-it-orange)">주황</option>
+                <option value="var(--post-it-green)">초록</option>
+                <option value="var(--post-it-blue)">파랑</option>
+                <option value="var(--post-it-purple)">보라</option>
+              </select>
+              <input class="date" type="date" required />
+            </div>
+            <textarea class="content" maxlength="160"></textarea>
+          </div>
+          <div class="register-cancel">
+            <button type="submit">등록</button>
+            <button class="cancel-button" type="button">취소</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/postIt.js"></script>
+  </body>
+</html>

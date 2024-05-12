@@ -1,0 +1,12 @@
+:root {
+  --post-it-red: red;
+  --post-it-orange: orange;
+  --post-it-yellow: yellow;
+  --post-it-green: green;
+  --post-it-blue: blue;
+  --post-it-purple: purple;
+}
+
+html {
+  font-size: 62.5%;
+}
