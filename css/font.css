@@ -1,6 +1,5 @@
 @font-face {
   font-family: "bold";
-  font-style: normal;
   src: url("../assets/font/Pretendard-Bold.woff") format("woff");
 }
 
@@ -12,23 +11,19 @@
 .bold64 {
   font-family: "bold";
   font-size: 6.4rem;
-  font-weight: 400;
 }
 
 .bold32 {
   font-family: "bold";
   font-size: 3.2rem;
-  font-weight: 400;
 }
 
 .medium18 {
   font-family: "medium";
   font-size: 1.8rem;
-  font-weight: 400;
 }
 
 .medium12 {
   font-family: "medium";
   font-size: 1.2rem;
-  font-weight: 400;
 }
