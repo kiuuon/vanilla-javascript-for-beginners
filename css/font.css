@@ -1,29 +1,28 @@
 @font-face {
-  font-family: "bold";
-  src: url("../assets/font/Pretendard-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "medium";
-  src: url("../assets/font/Pretendard-Medium.woff") format("woff");
+  font-family: "Pretendard Variable";
+  src: url("../assets/font/PretendardVariable.woff2") format("woff2");
 }
 
 .bold64 {
-  font-family: "bold";
+  font-family: "Pretendard Variable";
+  font-weight: 700;
   font-size: 6.4rem;
 }
 
 .bold32 {
-  font-family: "bold";
+  font-family: "Pretendard Variable";
+  font-weight: 700;
   font-size: 3.2rem;
 }
 
 .medium18 {
-  font-family: "medium";
+  font-family: "Pretendard Variable";
+  font-weight: 400;
   font-size: 1.8rem;
 }
 
 .medium12 {
-  font-family: "medium";
+  font-family: "Pretendard Variable";
+  font-weight: 400;
   font-size: 1.2rem;
 }

@@ -31,6 +31,12 @@ function closeWriteModal() {
     .padStart(2, "0")}-${currentDate.toString().padStart(2, "0")}`;
 }
 
+function clickOutside(event) {
+  if (event.target === writeModalOverlay) {
+    closeWriteModal();
+  }
+}
+
 function compareDates(a, b) {
   const dateA = new Date(a.date);
   const dateB = new Date(b.date);
@@ -41,7 +47,7 @@ function compareDates(a, b) {
 function writePost(event) {
   event.preventDefault();
   const post = {
-    id: current,
+    id: Math.random().toString(),
     title: title.value,
     date: date.value,
     color: color.value,
@@ -148,3 +154,4 @@ writeForm.addEventListener("submit", writePost);
 colorButtons.forEach((colorButton) => {
   colorButton.addEventListener("click", handleColorButton);
 });
+writeModalOverlay.addEventListener("click", clickOutside);
